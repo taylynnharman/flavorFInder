@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Start General */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+h1 a {
+  color: #213547;
+  font-size: 2em;
+  line-height: 1;
+}
+
+main {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+footer {
+  background: rgb(33, 53, 71);
+  color: #b8b8b8;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+/* End General */
+/* Start Header */
+.menu-icon {
+  content: "☰";
+}
+
+.cards {
+  background: #f2f2f2;
+  padding-block: 10px;
+}
+
+.recipe-img {
+  width: -webkit-fill-available;
+}
+
+section {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  margin: 20px;
+  color: #213547;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
+  margin-inline: auto;
+  height: 400px;
+  place-content: center;
+}
+
+.save-icon {
+  width: 25px;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.save-icon:hover {
+  background: #213547;
+  fill: #213547;
+}
+
+/* section:hover{
+} */
+
+/* Start Search Bar */
+.search-wrapper {
+  margin: auto;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 220px;
+  height: 2rem;
+  padding-inline: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 3px solid #646cff;
+  font-size: large;
+}
+
+.search-button {
+  height: 2.5rem;
+  width: 75px;
+  background: #646cff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  transform: translate(-26px, 0px);
+}
+
+.search-button:hover {
+  background: #213547;
+}
+
+.search-icon {
+  height: -webkit-fill-available;
+  padding: 7px;
+}
+
+/* End Search Bar */
+.rb-h1 {
+  text-align: center;
+  color: #213547;
+
+}
+
+.recipe-book {
+  display: flex;
+  background: #f2f2f2;
+}
+
+/* Larger CSS */
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 25px;
+  }
+
+  nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    margin-inline: auto;
+    width: 90%;
+    padding-block: 0;
+  }
+}
